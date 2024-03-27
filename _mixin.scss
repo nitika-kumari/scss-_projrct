@@ -1,0 +1,29 @@
+@mixin button {
+    color: $color;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+@mixin hover {
+    color: #fff;
+    background-color: $primary-color;
+}
+
+@mixin sheading {
+    display: inline-block;
+    background: $primary-color;
+    color: #fff;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    padding: 1rem 2rem;
+}
+
+@mixin containergrid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}

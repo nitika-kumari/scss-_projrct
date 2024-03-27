@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100&display=swap');
+
+@import 'header';
+@import 'home';
+@import 'variable';
+@import 'mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    // transition: all 2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    // overflow: hidden;
+    // scroll-behavior: smooth;
+    // scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: #fff;
+}
+
+section {
+    .home {
+        background-image: url(images/banner.jpg);
+    }
+}
+
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        .navbar {
+            position: absolute;
+            right: -110%;
+            top: 110%;
+            width: 30rem;
+            box-shadow: $box-shadow;
+
+            &.active {
+                right: 2rem;
+                transition: .4s linear;
+                background-color: #fff;
+            }
+
+            a {
+                font-size: 2rem;
+                margin: 2rem 2.5rem;
+                display: block;
+            }
+        }
+
+        .icon {
+            #menu-btn {
+                display: inline-block;
+            }
+        }
+
+        .search-form {
+            width: 90%;
+        }
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+
+        .box {
+            margin: 2rem 0%;
+            clip-path: path();
+        }
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+
+        .box {
+            margin: 2rem 0%;
+        }
+
+
+        // .box{
+        //     padding: 3rem 2rem;
+        //     background: #fff;
+        //     box-shadow: $box-shadow;
+        //     // outline: $outline;
+
+        //     &:hover{
+        //         border: 2px solid black;
+        //     }
+
+
+        //     h3{
+        //         font-size: 2rem;
+        //     }
+
+        //     p{
+        //         font-size: 1rem;
+        //         padding: 2rem 0rem;
+        //     }
+
+        //     .btn{
+
+        //         @include button;
+        //         margin-top: 2rem;
+
+        //         &:hover{
+        //             @include hover;
+        //         }
+
+
+        //     }
+        // }
+    }
+}

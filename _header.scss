@@ -1,0 +1,166 @@
+@import 'mixin';
+@import 'variable';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    padding: 2rem 9%;
+    color: $color;
+
+    .logo{
+        font-size: 2.5rem;
+        color: $color;
+        font-weight: bolder;
+
+        i{
+            color: $primary-color;
+        }
+    }
+
+    .navbar{
+       
+        a{ 
+            font-size: 1.7rem;
+            margin: 0 1rem;
+            color: $color;
+            text-transform: capitalize;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    .icon{
+       div{
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        border-radius: 5rem;
+        font-size: 2rem;
+        margin-right: .3rem;
+        color: $color;
+        background: #fff;
+
+        &:hover{
+            color:$primary-color;
+        }
+       }
+       #menu-btn{
+        display: none;
+       }
+
+    }
+    
+    .search-form{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 50rem;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+
+        &.active{
+            right: 2rem;
+            transition: .4s liner;
+        }
+
+        input{
+            padding: 0 1rem;
+            width: 100%;
+            height: 100%;
+
+            ::placeholder{
+                color: $color;
+            }
+        }
+
+        label{
+            font-size: 2rem;
+            padding: 0 1rem;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .shopping-cart{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        padding: 1rem;
+        border-radius: .5rem;
+        width: 30rem;
+        background: #fff;
+        box-shadow: $box-shadow;
+            &.active{
+                right: 2rem;
+                transition: .4s linear;
+            }
+          
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .fa-trash{
+                font-size: 2rem;
+                order:3;
+            }
+        }
+        .btn{
+            @include button;
+
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+
+    .login-form{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: $box-shadow;
+        padding: 2rem;
+        text-align: center;
+        font-size: 2rem;
+     
+        &.active{
+            right: 2rem;
+            transition: .4s linear;
+            background: azure;
+            box-shadow: $box-shadow;
+
+        }
+        
+        input{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            padding: 1rem;
+            margin:1rem 0%;
+        }
+        .btn{
+            @include button;
+
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+}

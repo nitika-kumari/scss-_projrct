@@ -1,0 +1,489 @@
+@import 'variable';
+
+section {
+    padding-top: 10rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15rem 0%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(97, 62, 95, .6);
+
+    }
+
+    .content {
+        text-align: center;
+        width: 60rem;
+        z-index: 1;
+        color: #fff;
+
+        h3 {
+            color: $color;
+            font-size: 3rem;
+            // text-transform: capitalize;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            padding: 1rem 0;
+        }
+
+        .btn {
+            @include button;
+            display: inline;
+            padding: .5rem 2rem;
+
+
+            &:hover {
+                @include hover;
+            }
+        }
+    }
+}
+
+.our--feature {
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        text-transform: capitalize;
+
+        span {
+            display: inline-block;
+            background: $primary-color;
+            color: #fff;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+            padding: 1rem 2rem;
+        }
+    }
+
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+
+
+        .box {
+            padding: 3rem 2rem;
+            background: #fff;
+            box-shadow: $box-shadow;
+            // outline: $outline;
+
+            &:hover {
+                border: 2px solid black;
+            }
+
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 2rem 0rem;
+            }
+
+            .btn {
+
+                @include button;
+
+                display: inline;
+                padding: .5rem 2rem;
+
+                &:hover {
+                    @include hover;
+                }
+
+
+            }
+        }
+    }
+
+}
+
+.product {
+
+    text-align: center;
+    margin: 0% 10rem;
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+    span {
+        display: inline-block;
+        background: $primary-color;
+        color: #fff;
+        clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+        padding: 1rem 2rem;
+    }
+
+    // .product-slider{
+    //     width: 10rem;
+    // }
+
+    .box {
+        background: #fff;
+        border-radius: .5rem;
+        text-align: center;
+        box-shadow: $box-shadow;
+        // outline: $outline;
+        outline-offset: -1rem;
+        padding: 3rem 1rem;
+        margin-bottom: 2rem;
+
+        &:hover {
+            border: 2px solid black;
+            // outline-offset: 2rem;
+        }
+
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .price {
+            padding: 1rem 0%;
+        }
+
+        .start {
+            padding: 1rem 0%;
+        }
+
+        .btn {
+
+            @include button;
+            margin-top: 2rem;
+            display: inline;
+            padding: .5rem 2rem;
+
+            &:hover {
+                @include hover;
+            }
+
+
+        }
+    }
+
+
+}
+
+.our--feature {
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        text-transform: capitalize;
+
+        span {
+            display: inline-block;
+            background: $primary-color;
+            color: #fff;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+
+.categories {
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        text-transform: capitalize;
+
+        span {
+            display: inline-block;
+            background: $primary-color;
+            color: #fff;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+            padding: 1rem 2rem;
+        }
+    }
+
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+
+
+        .box {
+            padding: 3rem 2rem;
+            background: #fff;
+            box-shadow: $box-shadow;
+            // outline: $outline;
+
+            &:hover {
+                border: 2px solid black;
+            }
+
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 2rem 0rem;
+            }
+
+            .btn {
+
+                @include button;
+                display: inline;
+                padding: .5rem 2rem;
+
+                &:hover {
+                    @include hover;
+                }
+
+
+            }
+        }
+    }
+}
+
+.review {
+    margin: 0% 10rem;
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+
+        span {
+            display: inline-block;
+            background: $primary-color;
+            color: #fff;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+            padding: 1rem 2rem;
+        }
+    }
+
+    .review-slider {
+        .box {
+            background: #fff;
+            border-radius: .5rem;
+            text-align: center;
+            box-shadow: $box-shadow;
+            outline: $outline;
+            outline-offset: -1rem;
+            padding: 3rem 2rem;
+
+
+            &:hover {
+                outline: 2px solid black;
+                // outline-offset: 0rem;
+            }
+
+            img {
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $ligh-color;
+                line-height: 1.8;
+                padding: 1rem 0;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                padding-bottom: .5rem;
+            }
+
+            .start {
+                i {
+                    font-size: 1.7rem;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    margin: 0% 10rem;
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+
+        span {
+            display: inline-block;
+            background: $primary-color;
+            color: #fff;
+            clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+            padding: 1rem 2rem;
+        }
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+        gap: 1.5rem;
+
+        .box {
+
+
+            background: #fff;
+            border-radius: .5rem;
+            text-align: center;
+            box-shadow: $box-shadow;
+            // outline: $outline;
+            outline-offset: -1rem;
+            padding: 3rem 2rem;
+
+
+            &:hover {
+                outline: 2px solid black;
+                // outline-offset: 0rem;
+            }
+
+            img {
+                width: 60%;
+                height: 40%;
+            }
+
+            .content {
+                padding: 2rem;
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                    border-bottom: 2px solid gray;
+                    padding-bottom: 1.5rem;
+
+
+                    a {
+                        font-size: 1.5rem;
+                        color: $ligh-color;
+
+                        i {
+                            color: $primary-color;
+                            padding-right: .5rem;
+                        }
+                    }
+
+
+                }
+
+                h3 {
+                    font-size: 2.2rem;
+                    color: $secondary-color;
+                    padding: 1rem 0;
+                    // line-height: 1.8;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: $secondary-color;
+                    padding: 1rem 0;
+                    // line-height: 1.8;  
+                }
+
+                .btn {
+                    @include button;
+                    display: inline;
+                    padding: .5rem 2rem;
+                }
+            }
+
+
+        }
+    }
+
+
+}
+
+.footer {
+    background: #fff;
+    margin: 0% 10rem;
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+
+
+        .box {
+            padding: 0% 10rem;
+
+            P {
+                font-size: 1.4rem;
+            }
+
+            .share {
+                display: flex;
+                // align-items: left;
+                // justify-content: space-around;
+
+                a {
+                    font-size: 2rem;
+                    padding: 1rem 1rem;
+                    // color: $primary-color;
+                }
+            }
+
+            .links {
+                i {
+                    color: $primary-color;
+                    padding-right: 2rem;
+                }
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                padding: 1rem 0%;
+                text-transform: capitalize;
+
+                .share {
+                    display: flex;
+                }
+
+                i {
+                    color: $primary-color;
+                }
+            }
+
+            a {
+                display: block;
+                font-size: 1.5rem;
+                color: $ligh-color;
+                padding: 1rem 0%;
+            }
+        }
+    }
+}
